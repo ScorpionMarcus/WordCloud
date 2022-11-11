@@ -1,0 +1,15 @@
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\bin\Debug\net6.0\WordCloud.exe
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\bin\Debug\net6.0\WordCloud.deps.json
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\bin\Debug\net6.0\WordCloud.runtimeconfig.json
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\bin\Debug\net6.0\WordCloud.dll
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\bin\Debug\net6.0\WordCloud.pdb
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\obj\Debug\net6.0\WordCloud.csproj.AssemblyReference.cache
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\obj\Debug\net6.0\WordCloud.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\obj\Debug\net6.0\WordCloud.AssemblyInfoInputs.cache
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\obj\Debug\net6.0\WordCloud.AssemblyInfo.cs
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\obj\Debug\net6.0\WordCloud.csproj.CoreCompileInputs.cache
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\obj\Debug\net6.0\WordCloud.dll
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\obj\Debug\net6.0\refint\WordCloud.dll
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\obj\Debug\net6.0\WordCloud.pdb
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\obj\Debug\net6.0\WordCloud.genruntimeconfig.cache
+C:\Users\marcus.legault\source\repos\WordCloud\WordCloud\obj\Debug\net6.0\ref\WordCloud.dll
