@@ -1,4 +1,6 @@
-﻿namespace WordCloud
+﻿using System.Xml;
+
+namespace WordCloud
 {
     class Program
     {

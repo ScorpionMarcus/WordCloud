@@ -8,21 +8,31 @@ namespace WordCloud
 {
     class Print
     {
-        public static void parseWords(string word)
+        public static List<string> parseWords(string word)
         {
             List<string> wordList = new List<string>();
+            Dictionary<string, string> wordDict = new Dictionary<string, string>();
 
+            int count = 0;
+
+            // create a variable that contains all punctuation from the paragraph
             var punctuation = word.Where(Char.IsPunctuation).Distinct().ToArray();
 
+            // create an enumerable containing all the words with the punctuation items trimmed out
             var words = word.Split().Select(x => x.Trim(punctuation));
 
+            // loop through words and if a word has length greater than 2 add it to our list
             foreach (var i in words)
             {
-                Console.WriteLine(i);
-                wordList.Add(i);
+                if (i.Length > 2)
+                {
+                    Console.WriteLine(i.ToLower() + " - " + count);
+                    wordDict.Add("name: " + i.ToLower(), "count: " + count);
+                    count++;
+                }
             }
 
-            Console.WriteLine(wordList);
+            return wordList;
         }
     }
 }
