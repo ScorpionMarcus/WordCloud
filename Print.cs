@@ -10,15 +10,15 @@
 
             IEnumerable<string> words = text.Split().Select(x => x.Trim(punctuation).ToLower());
 
-            foreach (var i in words)
+            words.ToList().ForEach(x =>
             {
-                if (i.Length > 2)
+                if (x.Length > 2)
                 {
-                    if (map.ContainsKey(i)) 
-                        map[i]++;
-                    else map.Add(i, 1);
+                    if (map.ContainsKey(x))
+                        map[x]++;
+                    else map.Add(x, 1);
                 }
-            }
+            });
 
             map.ToList().ForEach(x => Console.WriteLine($"name: '{x.Key}', count: {x.Value}"));
 
