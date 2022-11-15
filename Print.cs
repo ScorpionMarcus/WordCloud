@@ -1,38 +1,42 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace WordCloud
 {
     class Print
     {
-        public static List<string> parseWords(string word)
+        public static Dictionary<string, int> parseWords(string word)
         {
-            List<string> wordList = new List<string>();
-            Dictionary<string, string> wordDict = new Dictionary<string, string>();
+            Dictionary<string, int> wordDict = new Dictionary<string, int>();
 
-            int count = 0;
-
-            // create a variable that contains all punctuation from the paragraph
             var punctuation = word.Where(Char.IsPunctuation).Distinct().ToArray();
 
-            // create an enumerable containing all the words with the punctuation items trimmed out
-            var words = word.Split().Select(x => x.Trim(punctuation));
+            var words = word.Split().Select(x => x.Trim(punctuation).ToLower());
 
-            // loop through words and if a word has length greater than 2 add it to our list
             foreach (var i in words)
             {
                 if (i.Length > 2)
                 {
-                    Console.WriteLine(i.ToLower() + " - " + count);
-                    wordDict.Add("name: " + i.ToLower(), "count: " + count);
-                    count++;
+                    if (wordDict.ContainsKey(i))
+                    {
+                        wordDict[i]++;
+
+                    }
+                    else
+                    {
+                        wordDict.Add(i, 1);
+                    }
                 }
             }
 
-            return wordList;
+            wordDict.ToList().ForEach(x => Console.WriteLine($"name: '{x.Key}', count: {x.Value}"));
+
+            return wordDict;
         }
     }
 }
